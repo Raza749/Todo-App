@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Amazon Ember", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container .user-input {
+    padding: 20px 30px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.304);
+    width: 550px;
+}
+
+.container .user-input form .heading {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.container .user-input form .error {
+    color: crimson;
+    transition: .8s ease;
+    font-size: 18px;
+    margin: 4px 0;
+    display: none;
+}
+
+.container .user-input form .show-error {
+    display: block;
+}
+
+.container .user-input form .field {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.container .user-input form .field input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.699);
+}
+
+.container .user-input form .field button {
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+.container .user-input form .field button:hover {
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+/* Task list styling */
+.container .user-input .task-list {
+    list-style: none;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.container .user-input .task-list li {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    text-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.338);
+    /* border: 1px solid rgba(0, 0, 0, 0.256); */
+    padding: 10px 8px;
+}
+
+.container .user-input .task-list li .dones{
+    text-decoration: line-through;
+}
+
+.container .user-input .task-list li .btns {
+    display: flex;
+}
+
+.container .user-input .task-list li .btns button {
+    padding: 3px 7px;
+    margin: 0 3px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
+
+.container .user-input .task-list li .btns .done {
+    background-color: black;
+}
+
+.container .user-input .task-list li .btns .delete {
+    background-color: crimson;
+}
